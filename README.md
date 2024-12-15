@@ -1,3 +1,52 @@
+# Open Canvas Monorepo
+
+This is a monorepo for the Open Canvas project, containing both frontend and backend services.
+
+## Project Structure
+
+```
+root/
+├── apps/
+│   ├── frontend/     # Next.js frontend application
+│   └── backend/      # Express.js backend service
+├── packages/
+│   ├── types/        # Shared TypeScript types
+│   └── config/       # Shared configuration
+└── tooling/          # Shared development tools
+```
+
+## Getting Started
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Set up environment variables:
+```bash
+cp apps/backend/.env.example apps/backend/.env
+# Edit .env with your configuration
+```
+
+3. Start development servers:
+```bash
+npm run dev
+```
+
+This will start both the frontend (port 3000) and backend (port 3001) in development mode.
+
+## Development
+
+- Frontend: http://localhost:3000
+- Backend: http://localhost:3001
+
+## Available Scripts
+
+- `npm run dev` - Start all services in development mode
+- `npm run build` - Build all packages and applications
+- `npm run lint` - Run linting across all packages
+- `npm run format` - Format code using Prettier
+
 # Open Canvas
 
 [TRY IT OUT HERE](https://opencanvas.langchain.com/)
